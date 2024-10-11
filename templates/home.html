@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance System</title>
+</head>
+<body>
+    <h1>Welcome to the Smart Attendance System</h1>
+    <ul>
+        <li><a href="{{ url_for('add_student') }}">Add New Student</a></li>
+        <li><a href="{{ url_for('take_attendance') }}">Take Attendance</a></li>
+        <li><a href="{{ url_for('view_attendance') }}">View Attendance</a></li>
+        <li><a href="{{ url_for('view_students') }}">View Registered Students</a></li>
+
+    </ul>
+</body>
+</html>

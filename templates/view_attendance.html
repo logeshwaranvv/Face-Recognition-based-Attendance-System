@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Attendance</title>
+</head>
+<body>
+    <h1>Attendance Records</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Date and Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for attendance, student, formatted_timestamp in attendance_records %}
+            <tr>
+                <td>{{ student.id }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ formatted_timestamp }}</td>  <!-- Use formatted timestamp -->
+            </tr>
+            {% endfor %}
+        </tbody>
+        
+    </table>
+
+    <a href="{{ url_for('home') }}">Go Back</a>
+</body>
+</html>

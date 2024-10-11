@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Attendance</title>
+</head>
+<body>
+    <h1>Take Attendance</h1>
+    <div>
+        <img src="{{ url_for('video_feed') }}" alt="Webcam feed" width="640" height="480">
+    </div>
+    <form method="POST">
+        <button type="submit">Take Attendance</button>
+    </form>
+    <br>
+    <a href="{{ url_for('home') }}">Go back to Home</a>
+</body>
+</html>
